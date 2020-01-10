@@ -105,6 +105,10 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calcuateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ph0-13-WCt"/>
+                                            <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6h3-2q-7Pj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -123,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="RsM-Hw-JMq"/>
                     </view>
                     <connections>
-                        <outlet property="heightLabel" destination="Xcz-1j-2c9" id="fjq-RK-dhF"/>
+                        <outlet property="heightLabel" destination="Xcz-1j-2c9" id="K6d-Fy-SY0"/>
                         <outlet property="weightLabel" destination="LTF-aL-8qu" id="m0c-rA-S6M"/>
                     </connections>
                 </viewController>

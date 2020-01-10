@@ -20,11 +20,16 @@ class ViewController: UIViewController {
     @IBAction func heightSlider(_ sender: UISlider) {
         let height = String(format: "%.2f", sender.value)
         heightLabel.text = "\(height)m"
+        print(height)
     }
     @IBAction func weightSlider(_ sender: UISlider) {
         let weight = String(format: "%.0f", sender.value)
-        weightLabel.text = "\(weight)kg"
+        weightLabel.text = "\(weight)Kg"
+        print(weight)
     }
+    @IBAction func calculateButtonPressed(_ sender: UIButton) {
+    }
+    
 
 }
 
