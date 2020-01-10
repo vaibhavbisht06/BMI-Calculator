@@ -14,14 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBAction func HeightSlider(_ sender: UISlider) {
-        let Height = String(format: "%2f", sender.value)
-        print(Height)
-    }
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
     
-    @IBAction func WeightSlider(_ sender: UISlider) {
-        let Weight = String(format: "%2f", sender.value)
-        print(Weight)
+    @IBAction func heightSlider(_ sender: UISlider) {
+        let height = String(format: "%.2f", sender.value)
+        heightLabel.text = "\(height)m"
     }
+    @IBAction func weightSlider(_ sender: UISlider) {
+        let weight = String(format: "%.0f", sender.value)
+        weightLabel.text = "\(weight)kg"
+    }
+
 }
 
