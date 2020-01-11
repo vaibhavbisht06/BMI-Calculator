@@ -10,5 +10,15 @@ import Foundation
 import UIKit
 
 class  SecondVC: UIViewController {
-    <#code#>
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
+     //MARK: - Recalcualte Button
+    @IBAction func recalculate(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

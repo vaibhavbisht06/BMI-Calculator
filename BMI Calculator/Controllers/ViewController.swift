@@ -38,6 +38,14 @@ class ViewController: UIViewController {
         print(weightSliderOutlet.value)
         let BMI = Weight/(Height*Height)
         print(BMI)
-    } 
+    }
+    
+    
+    override func prepare(for segue : UIStoryboardSegue, sender : Any?){
+           if segue.identifier == "showResult"{
+            _ = segue.destination as! SecondVC
+//               destinationVC = self
+           }
+    }
 }
 
